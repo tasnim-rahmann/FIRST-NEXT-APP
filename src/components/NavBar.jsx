@@ -13,6 +13,8 @@ const NavBar = () => {
                 <Link href="/about"><li className="cursor-pointer px- py-1">About Us</li></Link>
                 <Link href="/services"><li className="cursor-pointer px- py-1">Services</li></Link>
                 <Link href="/contact"><li className="cursor-pointer px- py-1">Contact</li></Link>
+                <Link href="/posts"><li className="cursor-pointer px- py-1">Post</li></Link>
+                <Link href="/meals"><li className="cursor-pointer px- py-1">Meal</li></Link>
             </ul>
         </nav>
     );
