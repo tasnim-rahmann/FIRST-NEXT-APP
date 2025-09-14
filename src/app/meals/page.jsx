@@ -1,3 +1,4 @@
+import Image from "next/image";
 import MealSearch from "./components/MealSearch";
 
 const MealPage = async ({ searchParams }) => {
@@ -16,6 +17,7 @@ const MealPage = async ({ searchParams }) => {
     };
 
     const meals = await fetchMeals();
+    console.log(meals);
 
     return (
         <div className="max-w-7xl mx-auto my-12">
@@ -28,7 +30,7 @@ const MealPage = async ({ searchParams }) => {
                         key={meal.idMeal}
                         className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
                     >
-                        <img
+                        <Image
                             src={meal.strMealThumb}
                             alt={meal.strMeal}
                             className="w-full h-48 object-cover"
